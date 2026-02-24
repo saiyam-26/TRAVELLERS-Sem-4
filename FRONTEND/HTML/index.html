@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellers - Travel Agency</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../ASSETS/logo.jpg" alt="Travellers logo" class="logo">
+            <span class="brand-name">Travellers</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html" class="nav-link active">Home</a></li>
+            <li><a href="services.html" class="nav-link">Our Services</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-carousel">
+            <!-- Carousel controls (CSS-only) -->
+            <input type="radio" name="hero-slide" id="hero-slide-1" class="hero-radio" checked>
+            <input type="radio" name="hero-slide" id="hero-slide-2" class="hero-radio">
+            <input type="radio" name="hero-slide" id="hero-slide-3" class="hero-radio">
+            <input type="radio" name="hero-slide" id="hero-slide-4" class="hero-radio">
+            <input type="radio" name="hero-slide" id="hero-slide-5" class="hero-radio">
+
+            <div class="hero-slides">
+                <!-- Slide 1 -->
+                <article class="hero-slide hero-slide-1">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <p class="hero-kicker">Tailor-made journeys, hassle-free.</p>
+                        <h1>Welcome to Travellers</h1>
+                        <p class="hero-text">
+                            Discover curated trips, handpicked stays, and seamless travel experiences
+                            across the globe with your trusted travel partner.
+                        </p>
+                        <a href="explore.html" class="btn-primary">Explore Trip</a>
+                    </div>
+
+                    <!-- Clickable navigation areas -->
+                    <label class="hero-nav hero-nav-prev" for="hero-slide-5"></label>
+                    <label class="hero-nav hero-nav-next" for="hero-slide-2"></label>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="hero-slide hero-slide-2">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2>Beach Getaways, Just a Click Away</h2>
+                        <p class="hero-text">
+                            Escape to pristine shores, crystal-clear waters, and sunset views with
+                            our handpicked beach destinations.
+                        </p>
+                        <a href="beach-getaways.html" class="btn-secondary">View Beach Packages</a>
+                    </div>
+                    <label class="hero-nav hero-nav-prev" for="hero-slide-1"></label>
+                    <label class="hero-nav hero-nav-next" for="hero-slide-3"></label>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="hero-slide hero-slide-3">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2>Mountain Retreats for Peace Seekers</h2>
+                        <p class="hero-text">
+                            Breathe in the fresh air, trek scenic trails, and unwind in cozy stays
+                            nestled in the hills.
+                        </p>
+                        <a href="mountain-retreats.html" class="btn-secondary">Explore Hills</a>
+                    </div>
+                    <label class="hero-nav hero-nav-prev" for="hero-slide-2"></label>
+                    <label class="hero-nav hero-nav-next" for="hero-slide-4"></label>
+                </article>
+
+                <!-- Slide 4 -->
+                <article class="hero-slide hero-slide-4">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2>City Lights & Iconic Landmarks</h2>
+                        <p class="hero-text">
+                            From Paris to New York, explore the world’s most vibrant cities with
+                            perfectly planned itineraries.
+                        </p>
+                        <a href="city-breaks.html" class="btn-secondary">Plan a City Break</a>
+                    </div>
+                    <label class="hero-nav hero-nav-prev" for="hero-slide-3"></label>
+                    <label class="hero-nav hero-nav-next" for="hero-slide-5"></label>
+                </article>
+
+                <!-- Slide 5 -->
+                <article class="hero-slide hero-slide-5">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2>Family Adventures Made Simple</h2>
+                        <p class="hero-text">
+                            Safe, fun-filled, and thoughtfully crafted trips for families of every
+                            size and age group.
+                        </p>
+                        <a href="family-trips.html" class="btn-secondary">See Family Trips</a>
+                    </div>
+                    <label class="hero-nav hero-nav-prev" for="hero-slide-4"></label>
+                    <label class="hero-nav hero-nav-next" for="hero-slide-1"></label>
+                </article>
+            </div>
+
+            <!-- Dots navigation -->
+            <div class="hero-dots">
+                <label for="hero-slide-1" class="hero-dot"></label>
+                <label for="hero-slide-2" class="hero-dot"></label>
+                <label for="hero-slide-3" class="hero-dot"></label>
+                <label for="hero-slide-4" class="hero-dot"></label>
+                <label for="hero-slide-5" class="hero-dot"></label>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="services-header">
+                <h2 class="section-title">Explore The World With Us</h2>
+                <p class="section-subtitle">
+                    We bring you the most exciting travel packages, best destinations,
+                    and memorable experiences. Adventure awaits.
+                </p>
+            </div>
+
+            <div class="service-cards">
+                <article class="service-card">
+                    <div class="service-icon-wrap">
+                        <img src="../ASSETS/Flight-Icon.jpg" alt="Flight booking" class="service-icon">
+                    </div>
+                    <h3 class="service-title">Flight Booking</h3>
+                    <p class="service-text">
+                        Quick and easy flight bookings with carefully selected routes and great deals.
+                    </p>
+                    <a href="flight-booking.html" class="btn-card">Book Now</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-wrap">
+                        <img src="../ASSETS/Hotel-Icon.jpg" alt="Hotel stay" class="service-icon">
+                    </div>
+                    <h3 class="service-title">Hotel Stay</h3>
+                    <p class="service-text">
+                        Comfortable and affordable hotels worldwide, from boutique stays to luxury resorts.
+                    </p>
+                    <a href="hotel-stay.html" class="btn-card">Book Now</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-wrap">
+                        <img src="../ASSETS/Car-Icon.jpg" alt="Car rentals" class="service-icon">
+                    </div>
+                    <h3 class="service-title">Car Rentals</h3>
+                    <p class="service-text">
+                        Convenient car rentals and transfers to make every part of your journey smooth.
+                    </p>
+                    <a href="car-rentals.html" class="btn-card">Book Now</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-wrap">
+                        <img src="../ASSETS/Insurance icon.jpg" alt="Travel insurance" class="service-icon">
+                    </div>
+                    <h3 class="service-title">Travel Insurance</h3>
+                    <p class="service-text">
+                        Protect your trip with comprehensive travel insurance and dedicated support.
+                    </p>
+                    <a href="travel-insurance.html" class="btn-card">Book Now</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <div class="offers-inner">
+                <div class="offers-header">
+                    <h2 class="offers-title">Best Offers</h2>
+                    <p class="offers-subtitle">
+                        Handpicked getaways with stays, sightseeing, and more bundled at great prices.
+                    </p>
+                </div>
+
+                <div class="offers-grid">
+                    <article class="offer-card">
+                        <div class="offer-image-wrap">
+                            <img src="../ASSETS/paris.jpg" alt="Paris Getaway" class="offer-image">
+                        </div>
+                        <div class="offer-body">
+                            <h3 class="offer-title">Paris Getaway</h3>
+                            <p class="offer-meta">5 Nights · ₹1,25,000</p>
+                            <a href="paris-getaway.html" class="btn-offer">Book Now</a>
+                        </div>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-image-wrap">
+                            <img src="../ASSETS/maldives.jpg" alt="Maldives Escape" class="offer-image">
+                        </div>
+                        <div class="offer-body">
+                            <h3 class="offer-title">Maldives Escape</h3>
+                            <p class="offer-meta">4 Nights · ₹70,000</p>
+                            <a href="maldives-escape.html" class="btn-offer">Book Now</a>
+                        </div>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-image-wrap">
+                            <img src="../ASSETS/kerala.jpg" alt="Kerala Adventure" class="offer-image">
+                        </div>
+                        <div class="offer-body">
+                            <h3 class="offer-title">Kerala Adventure</h3>
+                            <p class="offer-meta">6 Nights · ₹49,999</p>
+                            <a href="kerala-adventure.html" class="btn-offer">Book Now</a>
+                        </div>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-image-wrap">
+                            <img src="../ASSETS/goa.jpg" alt="Goa Getaway" class="offer-image">
+                        </div>
+                        <div class="offer-body">
+                            <h3 class="offer-title">Goa Getaway</h3>
+                            <p class="offer-meta">5 Nights · ₹55,000</p>
+                            <a href="goa-getaway.html" class="btn-offer">Book Now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="partners-block partners-airlines">
+                <h2 class="partners-title">Experience Flying with our Airline Partners</h2>
+                <div class="partner-card-row">
+                    <article class="partner-card">
+                        <img src="../ASSETS/air-india.jpg" alt="Air India" class="partner-image">
+                        <span class="partner-name">Air India</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/air-asia.jpg" alt="AirAsia" class="partner-image">
+                        <span class="partner-name">AirAsia</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/etihad-airways.jpg" alt="Etihad Airways" class="partner-image">
+                        <span class="partner-name">Etihad Airways</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/malaysia-airlines.jpg" alt="Malaysia Airlines" class="partner-image">
+                        <span class="partner-name">Malaysia Airlines</span>
+                    </article>
+                </div>
+            </div>
+
+            <div class="partners-block partners-hotels">
+                <h2 class="partners-title">Flagship Hotel Stores on Travellers</h2>
+                <div class="partner-card-row">
+                    <article class="partner-card">
+                        <img src="../ASSETS/Sterling Hotels.jpg" alt="Sterling Hotels &amp; Resorts" class="partner-image">
+                        <span class="partner-name">Sterling Hotels &amp; Resorts</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/hyatt hotel.jpg" alt="Hyatt Hotels" class="partner-image">
+                        <span class="partner-name">Hyatt Hotels</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/orchid-royal.jpg" alt="Royal Orchid Hotels" class="partner-image">
+                        <span class="partner-name">Royal Orchid Hotels</span>
+                    </article>
+                    <article class="partner-card">
+                        <img src="../ASSETS/iconic hotels.jpg" alt="Iconic Hotels" class="partner-image">
+                        <span class="partner-name">Iconic Hotels</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-download-section">
+            <div class="app-download-card">
+                <div class="app-download-left">
+                    <h2 class="app-download-title">Download App Now !</h2>
+                    <p class="app-download-subtitle">
+                        Use code <strong>WELCOMEMMT</strong> and get <strong>FLAT 12% OFF*</strong> on your first domestic flight booking
+                    </p>
+
+                    <form class="app-download-form" action="#" method="get">
+                        <div class="app-download-input">
+                            <span class="app-download-code">+91</span>
+                            <input
+                                class="app-download-number"
+                                type="tel"
+                                inputmode="numeric"
+                                placeholder="Enter Mobile number"
+                                aria-label="Mobile number"
+                            >
+                        </div>
+                        <button class="app-download-btn" type="button">GET APP LINK</button>
+                    </form>
+                </div>
+
+                <div class="app-download-right" aria-label="App download links and QR code">
+                    <img class="app-download-badges" src="../ASSETS/Download.jpg" alt="Get it on Google Play and App Store">
+                    <img class="app-download-qr" src="../ASSETS/QR%20Code.jpg" alt="QR Code">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="testimonials-inner">
+                <h2 class="testimonials-title">What Our Travellers Say</h2>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "Amazing experience with Travellers! My Paris trip was smooth and memorable."
+                        </p>
+                        <p class="testimonial-author">– Riya Sharma</p>
+                        <p class="testimonial-rating">★★★★★</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "The car rental service was top‑notch. The vehicle was clean and the driver was very professional."
+                        </p>
+                        <p class="testimonial-author">– Aman Verma</p>
+                        <p class="testimonial-rating">★★★★★</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "The hotel options were fantastic and the customer service was top notch."
+                        </p>
+                        <p class="testimonial-author">– Vikram Singh</p>
+                        <p class="testimonial-rating">★★★★★</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "Affordable prices and great service. I'll book again for sure!"
+                        </p>
+                        <p class="testimonial-author">– Arjun Patel</p>
+                        <p class="testimonial-rating">★★★★☆</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Travellers</h3>
+                    <p class="footer-text">
+                        Your trusted partner for unforgettable journeys worldwide.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="#best-offers">Best Offers</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <p class="footer-text">Email: support@travellers.com</p>
+                    <p class="footer-text">Phone: +91 98765 43210</p>
+                    <p class="footer-text">Location: Chandigarh, India</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="footer-social">
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">© 2025 Travellers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
