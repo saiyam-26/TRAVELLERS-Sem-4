@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellers - Contact Us</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../ASSETS/logo.jpg" alt="Travellers logo" class="logo">
+            <!-- <span class="brand-name">Travellers</span> -->
+             <a href="index.html" class="brand-name">Travellers</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Our Services</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="contact-hero" aria-label="Contact header">
+            <div class="contact-hero-inner">
+                <div class="hero-arrow hero-left" aria-hidden="true">❯❯❯</div>
+                <h1>Contact Us</h1>
+                <svg class="hero-wave" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,10 C30,0 70,20 100,10 C130,0 170,20 200,10" fill="none" stroke="#0f172a" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <p class="hero-sub">Got a question? Need help planning your perfect getaway? We’re just a message away!
+
+Our travel experts are ready to guide you with personalized recommendations, seamless bookings, and unforgettable experiences. Let’s start planning your next adventure today.</p>
+                <div class="hero-arrow hero-right" aria-hidden="true">❯❯❯</div>
+            </div>
+        </section>
+        
+        <!-- map moved below the form -->
+
+        <section class="contact-info" style="padding: 2rem; max-width: 1100px; margin: 0 auto;">
+            <div class="contact-cards">
+                <article class="contact-card">
+                    <div class="card-icon">
+                        <img src="../ASSETS/phone-icon.jpg" alt="Phone"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Phone No.</div>
+                        <div class="card-text">+91 96XXXXXXXX</div>
+                    </div>
+                </article>
+
+                <article class="contact-card">
+                    <div class="card-icon">
+                        <img src="../ASSETS/email-icon.jpg" alt="Email"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">E-mail</div>
+                        <div class="card-text">email@gmail.com</div>
+                    </div>
+                </article>
+
+                <article class="contact-card">
+                    <div class="card-icon">
+                        <img src="../ASSETS/address.jpg" alt="Address"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Address</div>
+                        <div class="card-text">Mumbai, Maharashtra, 400001</div>
+                    </div>
+                </article>
+
+                <article class="contact-card">
+                    <div class="card-icon">
+                        <img src="../ASSETS/clock.jpg" alt="Hours"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Opening Hours</div>
+                        <div class="card-text">Mon - Sat (9:00 AM to 6:00 PM)</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="contact-form-wrapper" style="max-width:1100px; margin: 1.5rem auto 3rem; padding: 0 1rem;">
+            <form class="contact-form" action="#" method="post" aria-label="Contact form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" name="lastName" type="text" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" min="0" placeholder="Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91 9XXXXXXXXX" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row form-actions">
+                    <button type="submit" class="btn-send">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Map: placed below the form and above the footer -->
+        <section class="contact-map" style="max-width:1100px; margin: 0 auto 2rem; padding: 0 1rem;">
+            <iframe
+                src="https://www.google.com/maps?q=Mumbai%20Maharashtra%20India&output=embed"
+                width="100%"
+                height="420"
+                style="border:0; border-radius:12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Travellers location map">
+            </iframe>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Travellers</h3>
+                    <p class="footer-text">
+                        Your trusted partner for unforgettable journeys worldwide.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="#best-offers">Best Offers</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <p class="footer-text">Email: support@travellers.com</p>
+                    <p class="footer-text">Phone: +91 98765 43210</p>
+                    <p class="footer-text">Location: Chandigarh, India</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="footer-social">
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">© 2025 Travellers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

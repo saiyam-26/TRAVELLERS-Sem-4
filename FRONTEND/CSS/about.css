@@ -39,12 +39,6 @@ body {
     border: 2px solid #e5f0ff;
 }
 
-.brand-name {
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-}
-
 .nav-links {
     list-style: none;
     display: flex;

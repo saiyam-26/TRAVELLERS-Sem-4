@@ -46,6 +46,18 @@ body {
     letter-spacing: 0.04em;
 }
 
+/* Ensure brand link matches navbar text: white and no underline */
+.brand-name {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.brand-name:hover,
+.brand-name:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
