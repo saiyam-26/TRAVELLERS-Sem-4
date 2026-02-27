@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travellers - Our Services</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/services.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-left">
             <img src="../ASSETS/logo.jpg" alt="Travellers logo" class="logo">
-            <span class="brand-name">Travellers</span>
+            <a href="index.html" class="brand-name">Travellers</a>
         </div>
 
         <ul class="nav-links">
@@ -26,9 +27,165 @@
     </nav>
 
     <main class="main-content">
-        <section style="padding: 6rem 2rem; text-align: center;">
-            <h1>Our Services</h1>
-            <p style="max-width:760px; margin:0.8rem auto; color:#475569;">Explore the range of services we offer to make your travel effortless — flights, hotels, car rentals and travel insurance.</p>
+        <section class="services-hero" aria-label="Services header">
+            <div class="services-hero-inner">
+                <div class="hero-arrow hero-left" aria-hidden="true">❯❯❯</div>
+                <h1>Our Services</h1>
+                <svg class="hero-wave" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,10 C30,0 70,20 100,10 C130,0 170,20 200,10" fill="none" stroke="#0f172a" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <p class="hero-sub">Explore the range of services we offer to make your travel effortless — flights, hotels, car rentals and travel insurance. Whether you're planning a weekend getaway or a month-long adventure, we've got everything you need for a seamless journey.</p>
+                <div class="hero-arrow hero-right" aria-hidden="true">❯❯❯</div>
+            </div>
+        </section>
+
+        <!-- Services Cards Section -->
+        <section class="services-section">
+            <div class="services-container">
+                <div class="section-header">
+                    <h2>Our Featured Services</h2>
+                    <p>Discover all the amazing services we provide for your journey</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Flight Booking">
+                            <div class="card-overlay">✈️</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Flight Booking</h3>
+                            <p>Book flights to thousands of destinations worldwide with exclusive deals and real-time availability.</p>
+                            <a href="flights.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Hotel Reservations">
+                            <div class="card-overlay">🏨</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Hotel Reservations</h3>
+                            <p>Choose from luxury resorts to budget stays. Find the perfect accommodation for your trip easily.</p>
+                            <a href="hotel-reservations-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Car Rentals">
+                            <div class="card-overlay">🚗</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Car Rentals</h3>
+                            <p>Rent vehicles at affordable prices from trusted partners. Drive with confidence on your adventure.</p>
+                            <a href="car-rentals-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Travel Insurance">
+                            <div class="card-overlay">🛡️</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Travel Insurance</h3>
+                            <p>Protect your journey with comprehensive travel insurance covering medical, delays, and cancellations.</p>
+                            <a href="travel-insurance-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Tour Packages">
+                            <div class="card-overlay">🗺️</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tour Packages</h3>
+                            <p>Curated itineraries with guided tours, activities, and meals included. Hassle-free travel experience.</p>
+                            <a href="tour-packages-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Visa Assistance">
+                            <div class="card-overlay">📋</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Visa Assistance</h3>
+                            <p>Expert guidance on visa applications and documentation for smooth international travel approval.</p>
+                            <a href="visa-assistance-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="Travel Consultation">
+                            <div class="card-overlay">💬</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Travel Consultation</h3>
+                            <p>Personalized advice from travel experts to plan your perfect getaway according to your preferences.</p>
+                            <a href="travel-consultation-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="../ASSETS/logo.jpg" alt="24/7 Support">
+                            <div class="card-overlay">💫</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock customer support to assist with any queries or emergencies during your travels.</p>
+                            <a href="support-details.html" class="card-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="why-choose-container">
+                <h2>Why Choose Travellers?</h2>
+                <div class="why-choose-grid">
+                    <div class="why-card">
+                        <div class="why-icon">⭐</div>
+                        <h3>Best Prices</h3>
+                        <p>We guarantee the most competitive rates and exclusive deals that you won't find elsewhere.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🎯</div>
+                        <h3>Expert Team</h3>
+                        <p>Our experienced travel consultants are dedicated to crafting your ideal travel experience.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">✅</div>
+                        <h3>Trusted Partner</h3>
+                        <p>Thousands of satisfied customers trust us for reliable, seamless travel solutions every day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Plan your next adventure with us today and experience travel like never before</p>
+                <a href="contact.html" class="cta-btn">Get Started Now</a>
+            </div>
         </section>
     </main>
 

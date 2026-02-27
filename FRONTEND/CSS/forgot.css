@@ -1,0 +1,154 @@
+/* Styles for forgot-password page, building off login layout */
+.forgot-hero {
+    background: linear-gradient(135deg, #0f4c81 0%, #22c1c3 100%);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.forgot-hero-content h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+
+.forgot-hero-content p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+.forgot-section {
+    padding: 4rem 1rem;
+    background: linear-gradient(180deg, #f0fafb 0%, #ffffff 100%);
+    min-height: calc(100vh - 350px);
+}
+
+.forgot-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.forgot-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.forgot-card h2 {
+    font-size: 1.8rem;
+    color: #05232b;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.forgot-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #05232b;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: rgba(15, 76, 129, 0.4);
+    box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.08);
+}
+
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.phone-code {
+    padding: 0.8rem 1rem;
+    background: #f5f8ff;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    font-weight: 600;
+    color: #05232b;
+}
+
+.phone-input-wrapper input {
+    flex: 1;
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-forgot {
+    padding: 1rem;
+    background: linear-gradient(90deg, #0f4c81, #22c1c3);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 28px rgba(15, 76, 129, 0.2);
+}
+
+.btn-forgot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(15, 76, 129, 0.25);
+}
+
+.hidden { display: none; }
+
+.result-message {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #05232b;
+    text-align: center;
+}
+
+.forgot-footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #556b6d;
+}
+
+.login-link {
+    color: #0f4c81;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .forgot-section { padding: 2.5rem 1rem; }
+    .forgot-card { padding: 2rem; }
+    .forgot-hero-content h1 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+    .forgot-section { padding: 2rem 0.8rem; }
+    .forgot-card { padding: 1.5rem; }
+    .forgot-hero-content h1 { font-size: 1.6rem; }
+}

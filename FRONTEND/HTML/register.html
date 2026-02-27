@@ -3,44 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Travellers - Create Your Account</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/register.css">
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="signup-box">
-    <h2>Create Your Account</h2>
-    <p>Join Travellers today and start your journey with us 🌍✈</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../ASSETS/logo.jpg" alt="Travellers logo" class="logo">
+            <a href="index.html" class="brand-name">Travellers</a>
+        </div>
 
-<form id="signupForm" novalidate>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Our Services</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
 
-  <div class="input-group">
-    <input type="text" id="fullname" placeholder="Full Name">
-  </div>
+        <div class="nav-right">
+            <a href="login.html" class="btn-register">Login</a>
+        </div>
+    </nav>
 
-  <div class="input-group">
-    <input type="email" id="email" placeholder="Email Address">
-  </div>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="register-hero">
+            <div class="register-hero-content">
+                <h1>Join Travellers Today</h1>
+                <p>Create your account and start exploring the world with exclusive deals and personalized recommendations</p>
+            </div>
+        </section>
 
-  <div class="input-group">
-    <input type="password" id="password" placeholder="Password">
-    <span class="toggle-eye" id="togglePass">&#128065;</span>
-  </div>
+        <!-- Registration Form Section -->
+        <section class="register-section">
+            <div class="register-container">
+                <div class="register-card">
+                    <div class="register-header">
+                        <h2>Create Your Account</h2>
+                        <p>Fill in the details below to get started with your travel journey</p>
+                    </div>
 
-  <div class="input-group">
-    <input type="password" id="confirmPassword" placeholder="Confirm Password">
-    <span class="toggle-eye" id="toggleCPass">&#128065;</span>
-  </div>
+                    <form id="registerForm" class="register-form" novalidate>
+                        <!-- First Row: First Name & Last Name -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    placeholder="Enter your first name"
+                                    required
+                                >
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    placeholder="Enter your last name"
+                                    required
+                                >
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
 
-  <button type="submit">Register</button>
+                        <!-- Email -->
+                        <div class="form-group full-width">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
 
-  <a href="login.html">Already have an account? Login</a>
-  <a href="index.html">← Back to Home</a>
-</form>
+                        <!-- Phone Number -->
+                        <div class="form-group full-width">
+                            <label for="phone">Phone Number</label>
+                            <div class="phone-input-wrapper">
+                                <span class="phone-code">+91</span>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    placeholder="Enter your phone number"
+                                    pattern="[0-9]{10}"
+                                    required
+                                >
+                            </div>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
 
+                        <!-- Password -->
+                        <div class="form-group full-width">
+                            <label for="password">Password</label>
+                            <div class="password-input-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Create a strong password"
+                                    required
+                                >
+                                <button type="button" class="toggle-password" id="togglePassword">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                            <span class="password-strength" id="passwordStrength"></span>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
 
+                        <!-- Confirm Password -->
+                        <div class="form-group full-width">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="password-input-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="confirmPassword" 
+                                    name="confirmPassword" 
+                                    placeholder="Re-enter your password"
+                                    required
+                                >
+                                <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
 
-  
+                        <!-- Terms & Conditions -->
+                        <div class="form-group checkbox-group full-width">
+                            <label class="checkbox-label">
+                                <input 
+                                    type="checkbox" 
+                                    id="terms" 
+                                    name="terms"
+                                    required
+                                >
+                                <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+                            </label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+
+                        <!-- Newsletter Signup -->
+                        <div class="form-group checkbox-group full-width">
+                            <label class="checkbox-label">
+                                <input 
+                                    type="checkbox" 
+                                    id="newsletter" 
+                                    name="newsletter"
+                                >
+                                <span>Send me exclusive deals and travel tips</span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-register-submit">Create Account</button>
+
+                        <!-- Login Link -->
+                        <div class="register-footer">
+                            <p>Already have an account? <a href="login.html" class="login-link">Login here</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Info Card -->
+                <div class="register-info-card">
+                    <h3>Why Join Travellers?</h3>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-icon">✈️</span>
+                            <div>
+                                <h4>Best Travel Deals</h4>
+                                <p>Exclusive offers and discounts only for members</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🎯</span>
+                            <div>
+                                <h4>Personalized Service</h4>
+                                <p>Tailored recommendations based on your preferences</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⭐</span>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock assistance for all your travel needs</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🛡️</span>
+                            <div>
+                                <h4>Secure Booking</h4>
+                                <p>Safe and secure transactions with guaranteed service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Travellers</h3>
+                    <p class="footer-text">Your trusted partner for unforgettable journeys worldwide.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <p class="footer-text">Email: support@travellers.com</p>
+                    <p class="footer-text">Phone: +91 98765 43210</p>
+                    <p class="footer-text">Location: Chandigarh, India</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="footer-social">
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                        <span class="footer-icon"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">© 2025 Travellers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/register.js"></script>
 </body>
 </html>
 

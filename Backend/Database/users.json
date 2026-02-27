@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1772112297361",
+    "firstName": "saiyam",
+    "lastName": "Gupta",
+    "email": "samgupta@gmail.com",
+    "phone": "1234567890",
+    "password": "Saiyam@1234"
+  },
+
+  {
+    "id": "1772113921601",
+    "firstName": "Rudraksh",
+    "lastName": "Gera",
+    "email": "rud@gmail.com",
+    "phone": "1234567765",
+    "password": "Qwerty@123"
+  }
+]
